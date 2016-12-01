@@ -2,7 +2,7 @@ var socket = io.connect();
 
 $(document).ready(function(){
  
- $('#textBox').scrollTop = $('#textBox').scrollHeight;
+
     
  $('#chatForm').submit(function(e){
      
@@ -49,7 +49,8 @@ $(document).ready(function(){
  
  socket.on('messages', function(data){
      
-     $('#textBox').append(data + "<br><br>");
+     $('#textBox').append('<p>' + data + "</p>");
+     $('#textBox').scrollTop = $('#textBox')[0].scrollHeight;
      
  });
     
