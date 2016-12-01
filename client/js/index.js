@@ -2,7 +2,7 @@ var socket = io.connect();
 
 $(document).ready(function(){
  
-$('#textBox').scrollTop = $('#textBox')[0].scrollHeight;
+$('#textBox')[0].scrollTop = $('#textBox')[0].scrollHeight;
     
  $('#chatForm').submit(function(e){
      
@@ -50,7 +50,7 @@ $('#textBox').scrollTop = $('#textBox')[0].scrollHeight;
  socket.on('messages', function(data){
      
      $('#textBox').append('<p>' + data + "</p>");
-     $('#textBox').scrollTop = $('#textBox')[0].scrollHeight;
+     $('#textBox')[0].scrollTop = $('#textBox')[0].scrollHeight;
      
  });
     
