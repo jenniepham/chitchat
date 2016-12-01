@@ -1,6 +1,8 @@
 var socket = io.connect();
 
 $(document).ready(function(){
+ 
+ $('#textBox').scrollTop($('#textBox')[0].scrollHeight);
     
  $('#chatForm').submit(function(e){
      
