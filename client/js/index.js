@@ -2,7 +2,7 @@ var socket = io.connect();
 
 $(document).ready(function(){
  
- $('#textBox').scrollTop($('#textBox').scrollHeight);
+ $('#textBox').scrollTop = $('#textBox').scrollHeight;
     
  $('#chatForm').submit(function(e){
      
