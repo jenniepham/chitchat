@@ -10,7 +10,7 @@ var app = express();
 var server = http.createServer(app);
 var io = socketio(server);
 var redis = require('redis');
-var redisClient = redis.createClient(16379, process.env.IP);
+var redisClient = redis.createClient(process.env.REDIS_URL);
 
 
 
@@ -34,6 +34,7 @@ var userList = [];
 var newUser = function(name){
   
   userList.push(name);
+  
   
 };
 
