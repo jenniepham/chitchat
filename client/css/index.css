@@ -1,0 +1,84 @@
+body{
+    background-color: #444;
+    color: #FFF;
+}
+
+.appBody{
+    margin: 0px auto;
+    width: 800px;
+    height: 500px;
+}
+
+h1{
+    color: #42f4b3;
+}
+
+.IdList{
+    float:left;
+    width: 30%;
+    height: 100%;
+    border: solid 1px #42f4b3;
+    border-right: none;
+}
+
+.chatBox{
+    float:left;
+    width: 69%;
+    height: 100%;
+    border: solid 1px #42f4b3;
+}
+
+#display{
+    width: 100%;
+    height: 70%;
+    border-bottom: solid 1px #42f4b3;
+}
+
+.form{
+    height: 27.7%;
+    
+}
+
+form{
+    margin: 0px;
+    padding: 0px;
+}
+
+#input{
+ border:none;
+ background-color: #999;
+ width: 80%;
+ height: 30px;
+ line-height: 100%;
+ border:none;
+ border-right: solid 1px #444;
+}
+
+#input:focus,#input:active{
+    outline: none;
+}
+
+#textBox{
+ margin: 0px auto;
+ margin-top: 10px;
+ width: 90%;
+ height: 90%;
+ overflow-y: auto;
+}
+
+#IdList{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+input[type="submit"], input[type="submit"]:active, input[type="submit"]:focus{
+    background-color: #999;
+    border: none;
+    color: #FFF;
+    height: 30px;
+}
+
+input[type="text"]{
+ color:#FFF;
+ padding: 0px 10px;
+}
